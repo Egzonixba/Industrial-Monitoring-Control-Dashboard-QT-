@@ -37,9 +37,8 @@ The project is inspired by manufacturing environments where operators monitor an
   - MQTT broker (e.g., Mosquitto)
 
 ### Data Flow
-
-Python Script → MQTT Broker → Qt App (subscribe to sensor data)
-Qt App → MQTT Broker → Python Script (send control commands)
+- Python Script → MQTT Broker → Qt App (subscribe to sensor data)
+- Qt App → MQTT Broker → Python Script (send control commands)
 
 ### Responsibilities
 
