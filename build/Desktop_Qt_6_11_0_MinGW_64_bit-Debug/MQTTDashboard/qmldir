@@ -1,9 +1,0 @@
-module MQTTDashboard
-typeinfo appMQTTDashboard.qmltypes
-prefer :/qt/qml/MQTTDashboard/
-Main 1.0 qml/Main.qml
-LoginView 1.0 qml/LoginView.qml
-MainOperationView 1.0 qml/MainOperationView.qml
-MonitoringView 1.0 qml/MonitoringView.qml
-depends QtQuick
-

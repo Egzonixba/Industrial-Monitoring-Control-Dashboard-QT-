@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/MQTTDashboard">
-    <file alias="qmldir">C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/MQTTDashboard/qmldir</file>
-  </qresource>
-</RCC>
-
