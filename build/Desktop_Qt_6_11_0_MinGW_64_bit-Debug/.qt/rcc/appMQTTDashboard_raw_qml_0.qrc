@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/MQTTDashboard/">
+    <file alias="qml/Main.qml">C:/Users/Krenare/MQTTDashboard/qml/Main.qml</file>
+    <file alias="qml/LoginView.qml">C:/Users/Krenare/MQTTDashboard/qml/LoginView.qml</file>
+    <file alias="qml/MainOperationView.qml">C:/Users/Krenare/MQTTDashboard/qml/MainOperationView.qml</file>
+    <file alias="qml/MonitoringView.qml">C:/Users/Krenare/MQTTDashboard/qml/MonitoringView.qml</file>
+  </qresource>
+</RCC>
+

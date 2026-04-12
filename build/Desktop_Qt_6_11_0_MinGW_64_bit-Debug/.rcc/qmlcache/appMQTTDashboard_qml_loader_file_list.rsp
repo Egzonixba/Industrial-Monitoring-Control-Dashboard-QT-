@@ -1,0 +1,8 @@
+--resource
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_MQTTDashboard.qrc
+--resource
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/appMQTTDashboard_raw_qml_0.qrc
+/qt/qml/MQTTDashboard/qml/Main.qml
+/qt/qml/MQTTDashboard/qml/LoginView.qml
+/qt/qml/MQTTDashboard/qml/MainOperationView.qml
+/qt/qml/MQTTDashboard/qml/MonitoringView.qml

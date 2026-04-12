@@ -1,0 +1,17 @@
+--bare
+-I
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+-I
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/MQTTDashboard
+-I
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+-I
+C:/Qt/6.11.0/mingw_64/qml
+--resource
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_MQTTDashboard.qrc
+--resource
+C:/Users/Krenare/MQTTDashboard/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/appMQTTDashboard_raw_qml_0.qrc
+C:/Users/Krenare/MQTTDashboard/qml/Main.qml
+C:/Users/Krenare/MQTTDashboard/qml/LoginView.qml
+C:/Users/Krenare/MQTTDashboard/qml/MainOperationView.qml
+C:/Users/Krenare/MQTTDashboard/qml/MonitoringView.qml
