@@ -15,21 +15,12 @@ ApplicationWindow {
 
     Material.theme: Material.Light
     Material.accent: Material.Blue
-
     color: "#f0f2f5"
 
-    // Navigation state: 0=login, 1=mainOp, 2=monitoring
     property int currentView: 0
 
-    Component.onCompleted: {
-        console.log("Main window loaded, currentView:", currentView)
-    }
+    onCurrentViewChanged: console.log("View changed to:", currentView)
 
-    onCurrentViewChanged: {
-        console.log("View changed to:", currentView)
-    }
-
-    // Login View
     Loader {
         id: loginLoader
         anchors.fill: parent
@@ -37,17 +28,14 @@ ApplicationWindow {
         visible: active
         source: "LoginView.qml"
     }
-
     Connections {
         target: loginLoader.item
         ignoreUnknownSignals: true
         function onLoginSuccess(username) {
-            console.log("Signal received: loginSuccess for", username)
             appWindow.currentView = 1
         }
     }
 
-    // Main Operation View
     Loader {
         id: mainOpLoader
         anchors.fill: parent
@@ -55,22 +43,18 @@ ApplicationWindow {
         visible: active
         source: "MainOperationView.qml"
     }
-
     Connections {
         target: mainOpLoader.item
         ignoreUnknownSignals: true
-        function onStartRunRequested() {
-            console.log("Signal received: startRunRequested")
+        function onGoToMonitoring() {
             appWindow.currentView = 2
         }
         function onLogoutRequested() {
-            console.log("Signal received: logoutRequested")
             backend.logout()
             appWindow.currentView = 0
         }
     }
 
-    // Monitoring View
     Loader {
         id: monitoringLoader
         anchors.fill: parent
@@ -78,16 +62,11 @@ ApplicationWindow {
         visible: active
         source: "MonitoringView.qml"
     }
-
     Connections {
         target: monitoringLoader.item
         ignoreUnknownSignals: true
         function onGoBackToMain() {
-            console.log("Signal received: goBackToMain")
             appWindow.currentView = 1
         }
     }
 }
-
-
-
